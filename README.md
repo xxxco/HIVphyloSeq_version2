@@ -1,6 +1,6 @@
 # HIVphyloSeq V2
 
-All analyses used publicly available sequences downloaded on Feb. 4, 2025, from the [LANL HIV Sequence Database](https://www.hiv.lanl.gov/): 496 full-length HIV-1 subtype B genomes (one per patient), sampled 2005–2024 in the United States, Canada, and 19 European countries. See [`sequence_selection.md`](sequence_selection.md) for the full filtering workflow, including how to download the raw data from LANL.
+All analyses used publicly available sequences downloaded on Feb. 4, 2025, from the [LANL HIV Sequence Database](https://www.hiv.lanl.gov/): 496 full-length HIV-1 subtype B genomes (one per patient), sampled 2005–2024 in the United States, Canada, and 19 European countries. See [`sequence_selection.md`](sequence_selection.md) for the full filtering workflow, including how to download the raw data from LANL. GenBank accessions for each region (full-length and the 7 subregions) are listed in [`accession_number/`](accession_number/).
 
 ---
 
@@ -183,5 +183,13 @@ HIVphyloSeq_V2/
 ├── README.md                     # this file
 ├── sequence_selection.md         # LANL download instructions, filtering criteria, cohort description
 ├── compare_cluster.R             # multi-metric cluster concordance analysis (clevr R package)
-└── accession_numbers.txt         # GenBank accessions for the 496 sequences in the final analysis set
+└── accession_number/             # GenBank accessions (Se.ID, Accession), one CSV per region
+    ├── accessions_fulllength.csv
+    ├── accessions_Gag_Pol.csv
+    ├── accessions_protease.csv
+    ├── accessions_RT.csv
+    ├── accessions_integrase.csv
+    ├── accessions_Vif.csv
+    ├── accessions_Env.csv
+    └── accessions_Nef.csv
 ```
